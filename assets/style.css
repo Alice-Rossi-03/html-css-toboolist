@@ -10,11 +10,8 @@ body{
     background-color: rgb(235, 235, 235);
 }
 
-
-
 h1::before{
     content: url("../assets/img/Logo.png");
-    position: center; 
 }
 
 header{
@@ -54,9 +51,9 @@ hr{
     background-color: white;
 }
 
-span{
+.true, .false{ 
     border: 1.5px solid; 
-    border-radius: 50%;
+    border-radius: 30px ;
     padding: 4px;
 }
 
@@ -75,8 +72,50 @@ h2{
 
 div{
     margin-bottom: 10px; 
+    display: inline-block;
 }
 
-h2::before{
-    content: ();
+div::after{
+    content: "";
+}
+
+h2{
+    display: inline-block;
+}
+
+svg{
+    size: 50px;
+    margin: 2px;
+}
+
+.tag{
+    color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    border: none;
+    margin-left: 4px; 
+}
+
+.edit{
+    background-color:lightblue;
+}
+
+.goal{
+    background-color:plum; 
+}
+
+.recruiting {
+    background-color:aquamarine;
+}
+
+.mob{
+    background-color:lightcoral; 
+}
+
+.web{
+    background-color:lightpink;
+}
+
+.sales{
+    background-color:lightgreen;
 }
