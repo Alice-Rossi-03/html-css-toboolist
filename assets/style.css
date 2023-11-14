@@ -10,19 +10,12 @@ body{
     background-color: rgb(235, 235, 235);
 }
 
-hr{
-    border: rgb(235, 235, 235) solid; 
-}
 
-h1{
-    
-}
 
 h1::before{
     content: url("../assets/img/Logo.png");
     position: center; 
 }
-
 
 header{
     width: 100%;
@@ -30,8 +23,55 @@ header{
     padding: 10px 20px;
 }
 
-nav, main{
+main{
     width: 70%;
     margin: auto;
     background-color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+not(hr){
+    border: 1px solid rgb(235, 235, 235); 
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.task{
+    background-color: lightblue;
+    color: white;
+}
+
+.section{
+    color: lightgray;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+span{
+    border: 1.5px solid; 
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.true{
+    color: green;
+}
+
+.false{
+    color: red;
+}
+
+h2{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+div{
+    margin-bottom: 10px; 
 }
