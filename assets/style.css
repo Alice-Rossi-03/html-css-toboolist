@@ -32,14 +32,15 @@ main{
     border-radius: 20px;
 }
 
-not(hr){
-    border: 1px solid rgb(235, 235, 235); 
-}
-
 button{
     border-radius: 5px;
     border: none;
     padding: 10px;
+}
+
+hr{
+    margin-top: 10px;
+    color: rgb(235, 235, 235);
 }
 
 .task{
@@ -74,4 +75,8 @@ h2{
 
 div{
     margin-bottom: 10px; 
+}
+
+h2::before{
+    content: ();
 }
