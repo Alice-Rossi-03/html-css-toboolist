@@ -16,7 +16,7 @@ body{
 header{
     width: 100%;
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px 0px 10px 20px;
 }
 
 header img{
@@ -31,22 +31,61 @@ header span{
 
 main{
     width: 70%;
-    margin: auto;
+    margin: 30px auto 0 auto;
     background-color: white;
-    margin-top: 20px;
-    padding: 10px 50px;
     border-radius: 20px;
+}
+
+main div{
+    padding: 10px 50px;
 }
 
 button{
     border-radius: 5px;
     border: none;
     padding: 10px;
+    margin-top: 20px;    
 }
 
 hr{
     margin-top: 10px;
     color: rgb(235, 235, 235);
+}
+
+section h2::before{
+    content: "\25BE";
+    margin-right: 5px;
+}
+
+
+.true::before{
+    content: "\2713";
+    font-size: 12px;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+}
+
+.false::before{
+    content: "\292B";
+    font-size: 12px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
 }
 
 .task{
@@ -60,71 +99,53 @@ hr{
     background-color: white;
 }
 
-.true, .false{ 
-    border: 1.5px solid; 
-    border-radius: 30px ;
-    padding: 4px;
-}
-
-.true{
-    color: green;
-}
-
-.false{
-    color: red;
-}
-
 h2{
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 div{
-    margin-bottom: 10px; 
-    display: inline-block;
-}
-
-div::after{
-    content: "";
+    margin-bottom: 2px; 
 }
 
 h2{
     display: inline-block;
 }
 
-svg{
-    size: 50px;
-    margin: 2px;
-}
-
-.tag{
+.tag::after{
+    border-radius: 20px;
     color: white;
-    padding: 5px; 
-    border-radius: 10px;
-    border: none;
-    margin-left: 4px; 
+    padding: 5px 8px;
+    margin-left: 10px;
+    font-size: 10px;
 }
 
-.edit{
-    background-color:lightblue;
+.edit::after{
+    content: "Editorial";
+    background-color: lightblue;
 }
 
-.goal{
+.goal::after{
+    content: "Q1 Goals";
     background-color:plum; 
 }
 
-.recruiting {
-    background-color:aquamarine;
+.recr::after{
+    content:"Recruiting";
+    background-color: aquamarine; 
 }
 
-.mob{
+.mob::after{
+    content: "Mobile";
     background-color:lightcoral; 
 }
 
-.web{
+.web::after{
+    content: "Website";
     background-color:lightpink;
 }
 
-.sales{
+.sales::after{
+    content: "Sales";
     background-color:lightgreen;
 }
